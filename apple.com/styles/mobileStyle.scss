@@ -1,0 +1,337 @@
+.container {
+  display: grid;
+  //max-width: 960px;
+  max-height: 6850px;
+  margin:auto;
+  grid-gap: 0.5vh;
+  grid-template-rows: 0.15fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+
+  .header {
+    height: 18vh;
+    //height: 10px;
+    //margin : 0px, 20px;
+    width: 100%;
+    //max-width: 1024px;
+    display: block;
+    display: flex;
+
+    flex-direction: column;
+    //position:fixed; top:0px; right: 0px; left:0px;
+
+    .header1 {
+      //height: 50%;
+
+      height: 8vh;
+      z-index: 2;
+      background-color: #333333;
+
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      display: flex;
+      //display: block;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      //max-width: 1000px;
+      .search{
+        height: 50px;  
+        align-items: center;
+      }
+      .bag{
+          display: none;
+      }
+      .links {
+        display: none;
+        padding-top: 0px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          list-style: none;
+          justify-content: center;
+          //align-items: center;
+          //margin-top: 13px;
+          padding-left: 2vw;
+          font-family: SF;
+          font-size: 2vh;
+          a {
+            text-decoration: none;
+            color: #bebebe;
+            //padding-left: 20px;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .header2 {
+      margin-top: 7vh;
+      height: 10vh;
+      background-color: #f5f5f7;
+      //display: block;
+      width: 100%;
+      text-align: center;
+      font-family: SF;
+      font-size: 2.1vh;
+      //line-height:21px;
+      //height: 50%;
+      color: #333333;
+      padding: 3% 15%;
+    }
+  }
+
+  .onePhoto {
+    //background-color: #cccccc; /* Used if the image is unavailable */
+    height: 95vw; /* You must set a specified height */
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    .href {
+      display: block;
+      height: 100%;
+      max-height: 200px;
+
+      //height:600px;
+      //width:1240px;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    .yazi {
+      display: block;
+      width: 100%;
+      position: absolute;
+      //margin-top: 0px;
+
+      text-align: center;
+      font-family: "SF";
+
+      //margin-left: 33%;
+      .yazi1 {
+        text-align: center;
+        font-family: "SF";
+      }
+      h1 {
+        font-size: 6vh;
+      }
+      .yazi12 {
+        font-size: 4vh;
+      }
+      p {
+        font-size: 2.5vh;
+        color: #86868b;
+      }
+      .span {
+        .yazispan {
+          margin-left: 1.5vh;
+        }
+        a {
+          text-decoration: none;
+          font-size: 3vh;
+          color: #0066cc;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    // .href11{
+    //     background-image: url("media/1-iphone_12_updated__jepm2xpxncuy_large.jpg");
+    // }
+    // .href12{
+    //     background-image: url("media/2-iphone_12_pro_us__e5oyysg4k0ya_large.jpg");
+    // }
+  }
+
+  .onePhoto1 {
+    background-image: url("../media/onePhoto1.jpg");
+  }
+  .onePhoto2 {
+    background-image: url("../media/onePhoto2.jpg");
+    .yazi {
+      margin-top: 4vh;
+    }
+  }
+  .onePhoto3 {
+    background-image: url("../media/onePhoto3.jpg");
+  
+    .yazi {
+      margin-top: 45%;
+      //text-align: center end;
+      a {
+        text-decoration: none;
+        color: rgb(68, 68, 68);
+      }
+    }
+  }
+  .twoPhoto {
+    //margin: 0vw 1vw;
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: 1fr;
+    .middle {
+      height: 500px; /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      //background-size: cover; /* Resize the background image to cover the entire container */
+      .href {
+        display: block;
+        //height:500px;
+      }
+      .yazi {
+        display: block;
+        text-align: center;
+        margin-top: 3vh;
+        font-family: SF;
+        font-size: 2.5vh;
+        .span {
+          .yazispan {
+            margin-left: 1.5vh;
+          }
+          a {
+            text-decoration: none;
+            font-size: 2.5vh;
+            color: #0066cc;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .twoPhoto11 {
+      background-image: url("../media/2-1_promo_ipad_pro_non_avail__c6f02v7gnwgi_large.jpg");
+    }
+    .twoPhoto12 {
+      background-image: url("../media/2-2_promo_imac__crg641tip4q6_large.jpg");
+    }
+    .twoPhoto21 {
+      background-image: url("../media/3-1_promo_watch_series_6_lte__f8lrasjnry2y_large.jpg");
+    }
+    .twoPhoto22 {
+      //height: 550px;
+      background-image: url("../media/3-2_tile__cauwwcyy9hy_large.jpg");
+      background-position: bottom;
+    }
+    .twoPhoto31 {
+      background-image: url("../media/4-1_promo_bts__bg3cb4kaoqoi_large.jpg");
+    }
+    .twoPhoto32 {
+      background-image: url("../media/4-2_tile__cauwwcyyn9hy_large.jpg");
+    }
+  }
+
+  .footage1 {
+    //position: relative;
+
+    //margin-bottom: 10px;
+    //height: min-content;
+    .href {
+      display: block;
+      height: 100px;
+      //max-height: 95px;
+      width: 100%;
+      //background-color:crimson;
+    }
+    .yazi {
+      display: block;
+      width: 100%;
+      position: absolute;
+      padding: 2vh;
+
+      //margin-top: 20px;
+      font-family: "SF";
+      text-align: center;
+      .ftg2 {
+        font-size: 2.5vh;
+        text-align: center;
+      }
+      .ftg3 {
+        font-size: 2.5vh;
+        text-decoration: none;
+      }
+    }
+  }
+  .footage2 {
+    background-color: #f5f5f7;
+    padding: 1vh 3vh;
+
+    p {
+      color: #86868b;
+      font-size: 1.75vh;
+      font-family: "SF";
+    }
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #86868b;
+      }
+    }
+    .altYzi {
+      display: flex;
+      justify-content: space-between;
+      font-family: SF;
+      font-size: 1.6vh;
+      margin-bottom: 2vh;
+      .list {
+        display: flex;
+        justify-content: left;
+      }
+      .son {
+        display: block;
+
+        text-align: end;
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      li {
+        padding-left: 2.9vh;
+        padding-right: 1.45vh;
+        font-size: 1.6vh;
+        font-family: SF;
+        text-align: center;
+        border-right: solid 1px rgb(199, 198, 198);
+        a {
+          //text-align: center;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .links {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    p {
+      font-weight: bold;
+      color: #1d1d1f;
+      font-family: "SF";
+    }
+    ul {
+      list-style-type: none;
+      line-height: 25px;
+
+      a {
+        text-decoration: none;
+        color: #86868b;
+        font-size: 12px;
+        font-family: "SF";
+      }
+    }
+  }
+}
