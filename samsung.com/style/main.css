@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "samsungone";
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 5rem;
+}
+
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header ul li {
+  padding: 0.5rem;
+}
+
+header .header ul li a {
+  color: black;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+header .header ul li a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 44rem;
+}
+
+header .HeaderNavRightSide .HeaderNavLeftSide {
+  width: 100%;
+}
+
+header .HeaderNavRightSide nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .HeaderNavRightSide .icon {
+  padding: 1.5rem;
+}
+
+header .HeaderNavRightSide .icon .bars {
+  display: none;
+}
+
+header .HeaderNavRightSide .icon a {
+  text-decoration: none;
+  color: black;
+}
+
+header .HeaderNavRightSide .icon .fas {
+  padding: 1rem;
+}
+
+header .HeaderNavRightSide .icon i {
+  font-size: 1.25rem;
+}
+
+header .HeaderNavLeftSide img {
+  width: 8rem;
+}
+
+main .banner {
+  background-image: url("../img/banner.webp");
+  height: 40rem;
+  max-height: 600px;
+}
+
+main .banner .bannerYazi {
+  margin-left: 60%;
+}
+
+main .part1 {
+  height: 40rem;
+  width: 100%;
+}
+
+main .part1 .part1Images {
+  padding: 0 1rem;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.25rem;
+      grid-template-areas: "e a b" "e c d";
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+main .part1 .part1Images .part1ImagesLeftSide {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: e;
+}
+
+main .part1 .part1Images .part1ImagesLeftSide:hover .foto-zoom {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .part1 .part1Images .part1ImagesLeftSide:hover .ghostButton {
+  display: block;
+}
+
+main .part1 .part1Images .part1ImagesLeftSide img {
+  width: 65%;
+  height: 55%;
+  margin-top: 20%;
+}
+
+main .part1 .part1Images .part1ImagesRightSide img {
+  margin-top: 2rem;
+}
+
+main .part1 .part1Images .part1ImagesRightSide .ghostButton {
+  width: 40%;
+}
+
+main .part1 .part1Images .part1ImagesRightSide:hover .foto-zoom {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .part1 .part1Images .part1ImagesRightSide:hover .ghostButton {
+  display: block;
+}
+
+main .part1 .part1Images .part1ImagesRightSide:hover .delete {
+  display: none;
+}
+
+main .part1 .part1Images .part1ImagesRightSide-11 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: a;
+}
+
+main .part1 .part1Images .part1ImagesRightSide-12 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: b;
+}
+
+main .part1 .part1Images .part1ImagesRightSide-21 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: c;
+}
+
+main .part1 .part1Images .part1ImagesRightSide-22 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: d;
+}
+
+main .part1 .part1Images .part1ImagesRightSide-22 img {
+  margin-top: -1px;
+  width: 70%;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+main .part2 {
+  margin-top: 13rem;
+}
+
+main .part2 .bannerYazi {
+  width: 100%;
+}
+
+main .part2 .bannerYazi h1 {
+  margin-bottom: 1rem;
+}
+
+main .part2 .part2Image .part2-Image {
+  height: 24rem;
+}
+
+main .part3 {
+  margin-top: 6rem;
+  background-image: url("../img/part3Backgroung.jpg");
+  background-position: center;
+  height: 40rem;
+}
+
+main .part3 .part3Yazi {
+  padding-top: 1rem;
+  color: white;
+}
+
+main .part3 .part3Yazi a {
+  color: white;
+}
+
+main .part3 .bannerYazi {
+  height: 100%;
+  margin-top: 27%;
+  color: white;
+}
+
+main .part3 .bannerYazi h1 {
+  margin-bottom: 1rem;
+}
+
+main .part3 .bannerYazi a {
+  color: white;
+}
+
+main .part3 .bannerYazi #bigOne {
+  border-bottom: 2px solid white;
+}
+
+main .part3 .bannerYazi #smallOne:hover {
+  background-color: gray;
+}
+
+main .part4 {
+  background-color: black;
+  background-image: url("../img/part4Backgroungg.webp");
+  background-size: 95%;
+  background-position: center;
+  height: 40rem;
+}
+
+main .part4 .part3Yazi {
+  padding-top: 1rem;
+}
+
+main .part4 .bannerYazi {
+  height: 100%;
+  margin-top: 27%;
+}
+
+main .part4 .bannerYazi h1 {
+  margin-bottom: 1rem;
+}
+
+main .part4 .bannerYazi #smallOne:hover {
+  background-color: gray;
+}
+
+main .part5 h1 {
+  margin: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .part5 .part5MiniContainer {
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .part5 .part5MiniContainer .imgLeftSide img {
+  width: 95%;
+  border-radius: 20px;
+}
+
+main .part5 .part5MiniContainer .imgRightSide {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+main .part5 .part5MiniContainer .imgRightSide .row {
+  margin: 2rem 0;
+}
+
+main .part5 .part5MiniContainer .imgRightSide .row a {
+  padding-top: 2rem;
+  margin-left: 3.3rem;
+  color: black;
+  font-size: 0.8rem;
+  display: none;
+}
+
+main .part5 .part5MiniContainer .imgRightSide .row-all {
+  -webkit-transition: margin 0.2s, padding 0.2s;
+  transition: margin 0.2s, padding 0.2s;
+}
+
+main .part5 .part5MiniContainer .imgRightSide .row-all:hover {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 2px solid black;
+  border-bottom: 1px solid grey;
+}
+
+main .part5 .part5MiniContainer .imgRightSide .row-all:hover a {
+  display: block;
+}
+
+main .part5 .part5MiniContainer .imgRightSide .row-1:hover > .leftSide {
+  src: url(../img/da0023_home_explore_banner_pc_684x684.jpg);
+}
+
+main .part5 .part5MiniContainer .imgRightSide .part5Yazi {
+  margin-left: 2rem;
+  font-size: 1.75rem;
+}
+/*# sourceMappingURL=main.css.map */

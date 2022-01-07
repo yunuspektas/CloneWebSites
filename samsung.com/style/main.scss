@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "samsungone";
+}
+
+ul {
+  list-style-type: none;
+  a {
+    text-decoration: none;
+  }
+}
+header {
+  //width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-height: 5rem;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      li {
+        padding: 0.5rem;
+
+        a {
+          color: black;
+          font-size: 0.75rem;
+          letter-spacing: 1px;
+          font-weight: bold;
+          padding: 0.5rem;
+          &:hover {
+            color: white;
+            background-color: black;
+            border-radius: 44rem;
+          }
+        }
+      }
+    }
+  }
+  .HeaderNavRightSide .HeaderNavLeftSide {
+    width: 100%;
+  }
+  .HeaderNavRightSide {
+    //position: relative;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .icon {
+      padding: 1.5rem;
+      .bars {
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .fas {
+        padding: 1rem;
+      }
+      i {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .HeaderNavLeftSide {
+    img {
+      width: 8rem;
+    }
+  }
+}
+main {
+  .banner {
+    background-image: url("../img/banner.webp");
+    height: 40rem;
+    max-height: 600px;
+    .bannerYazi {
+      margin-left: 60%;
+    }
+  }
+  .part1 {
+    height: 40rem;
+    width: 100%;
+    .part1Images {
+      padding: 0 1rem;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-gap: 1.25rem;
+      grid-template-areas:
+        "e a b"
+        "e c d";
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      //overflow: hidden;
+      //   flex-direction: row;
+      .part1ImagesLeftSide {
+        grid-area: e;
+        &:hover .foto-zoom {
+          transform: scale(1.05);
+        }
+        &:hover .ghostButton {
+          display: block;
+        }
+        img {
+          //display: block;
+          width: 65%;
+          height: 55%;
+          //text-align: center;
+          margin-top: 20%;
+        }
+
+        //margin-left: 1rem;
+        //   background-image: url("../img/part1ImagesLeftSide.webp");
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+      }
+      .part1ImagesRightSide {
+        img {
+          margin-top: 2rem;
+        }
+        .ghostButton {
+          width: 40%;
+        }
+        &:hover .foto-zoom {
+          transform: scale(1.05);
+        }
+        &:hover .ghostButton {
+          display: block;
+        }
+        &:hover .delete {
+          display: none;
+        }
+      }
+      .part1ImagesRightSide-11 {
+        grid-area: a;
+      }
+      .part1ImagesRightSide-12 {
+        grid-area: b;
+      }
+      .part1ImagesRightSide-21 {
+        grid-area: c;
+      }
+      .part1ImagesRightSide-22 {
+        grid-area: d;
+        img {
+          margin-top: -1px;
+          width: 70%;
+          object-fit: none;
+        }
+      }
+    }
+  }
+  .part2 {
+    margin-top: 13rem;
+    .bannerYazi {
+      width: 100%;
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
+    .part2Image {
+      .part2-Image {
+        height: 24rem;
+      }
+    }
+  }
+  .part3 {
+    margin-top: 6rem;
+    background-image: url("../img/part3Backgroung.jpg");
+    background-position: center;
+    height: 40rem;
+    .part3Yazi {
+      padding-top: 1rem;
+      color: white;
+      a {
+        color: white;
+      }
+    }
+    .bannerYazi {
+      height: 100%;
+      margin-top: 27%;
+      color: white;
+      h1 {
+        margin-bottom: 1rem;
+      }
+      a {
+        color: white;
+      }
+      #bigOne {
+        border-bottom: 2px solid white;
+      }
+      #smallOne {
+        &:hover {
+          background-color: gray;
+        }
+      }
+    }
+  }
+  .part4{
+    background-color: black;
+    background-image: url("../img/part4Backgroungg.webp");
+    background-size: 95%;
+    background-position: center;
+    height: 40rem;
+    .part3Yazi {
+      padding-top: 1rem;
+   
+    }
+    .bannerYazi {
+      height: 100%;
+      margin-top: 27%;
+      
+      h1 {
+        margin-bottom: 1rem;
+      }
+  
+ 
+      #smallOne {
+        &:hover {
+          background-color: gray;
+        }
+      }
+    }
+    
+  }
+  .part5{
+    h1{
+      margin: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .part5MiniContainer{
+      
+      padding: 0 1.5rem;
+      display: flex;
+      .imgLeftSide{
+      
+        //overflow: hidden;
+        img{
+          width: 95%;
+          border-radius: 20px;
+        }
+      }
+      .imgRightSide{
+        align-items: center;
+        margin: auto;
+        .row{
+          margin: 2rem 0;
+          //padding-top: 2rem;
+          //padding-bottom: 1.5rem;
+          a{
+            padding-top: 2rem;
+            margin-left: 3.3rem;
+            //text-decoration: none;
+            color: black;
+            font-size: 0.8rem;
+            display: none;
+          }
+         
+        }
+        .row-all{
+          transition: margin 0.2s, padding 0.2s; 
+          &:hover{
+            margin: 3rem 0;
+            padding: 2rem 0;
+            border-top: 2px solid black;
+            border-bottom: 1px solid grey;
+            a{
+              display: block;
+            }
+          }
+        }
+        .row-1{
+          &:hover > .leftSide {
+            src: url(../img/da0023_home_explore_banner_pc_684x684.jpg);
+          }
+        }
+    
+        .part5Yazi{
+            margin-left: 2rem;
+            font-size: 1.75rem;
+        }
+
+        
+      }
+        
+      
+    }
+  }
+}
